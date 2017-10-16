@@ -8,13 +8,18 @@
     <body>
         <div id="c">
             <form action="/" method="POST">
-                <input type="text" name="f" value="{{ itext }}" pattern="[0-9]{2,}" title="Пълен ф-к или последните 2 цифри!">
+                <input type="text" name="f" value="{{ itext }}" pattern="[0-9]{8,}" title="Пълен факултетен номер!">
                 <input type="submit" name="submit" value="Натисни ме">
-                {% if post %}
-                <pre>{{ text }}</pre>
-                {% endif %}
             </form>
-            Последна актуализация <b>{{ last_update }}</b>.
+            {% if post %}
+            <pre><br>Вашите задачи са:<br><br>{{ text }}</pre>
+            <div class="border"></div>
+            <pre><br>Кой има същите задачи:<br><br>{{ users }}</pre>
+            {% endif %}
+            <div style="clear: both;"></div>
+            <footer>
+                Последна актуализация <b>{{ last_update }}</b>.
+            </footer>
         </div>
     </body>
 </html>
