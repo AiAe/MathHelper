@@ -8,28 +8,33 @@ body{
     width: 600px;
     height: auto;
     margin-top: 20px;
-    padding: 5px;
     text-align: center;
-}
-
-form{
+    word-wrap:break-word;
     border: 1px solid black;
 }
 
+form{
+
+}
+
 form input[type='text']{
-    width: 100%;
+    width: 84%;
     height: 40px;
     font-size: 20pt;
     padding-left: 5px;
     border: 0;
-    text-align: center;
+    float: left;
+    border-bottom: 1px solid black;
 }
 
 form input[type='submit']{
-    width: 100%;
+    width: 16%;
     height: 40px;
     border: none;
     text-size: 14pt;
+    float: left;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 pre{
@@ -37,5 +42,11 @@ pre{
     margin: 0;
     padding: 2px;
     font-size: 16pt;
-    text-align: center;
+    width: 49%;
+    float: left;
+}
+
+footer{
+    border-top: 1px solid black;
+    padding: 4px;
 }
